@@ -4,18 +4,32 @@ you'll learn about it later. */
 
 body {
   margin: 0;
-  background: #eee;
+  background: lightskyblue;
   font-family: Besley, serif;
+  display: flex;
 }
 
 .header {
-  background: white;
-  border-bottom: 1px solid #ddd;
+  background: lightsalmon;
+  border-bottom: 5px dotted red;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  gap: 16px;
+  
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
-  background: rebeccapurple;
+  background: darkgreen;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
@@ -27,12 +41,14 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 8px;
+  margin-left: 8px;
 }
 
 button {
   border: none;
   border-radius: 8px;
-  background: rebeccapurple;
+  background: darkgreen;
   color: white;
   padding: 8px 24px;
 }
@@ -45,4 +61,6 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex ;
+  gap: 10px;
 }
