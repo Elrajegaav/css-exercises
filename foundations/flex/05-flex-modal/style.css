@@ -16,10 +16,15 @@ body {
 }
 
 .modal {
+  display: flex;
   background: white;
+  padding: 24px;
+  align-items: flex-start;
+  gap: 20px;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  position: relative;
 }
 
 .icon {
@@ -33,9 +38,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
+.modal-content {
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding-right: 32px;
+
+}
+
+
 .close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -43,17 +71,34 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #eee;
+  cursor: pointer;
+  border: 1px solid cyan;
   padding: 0;
 }
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+
+.text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.continue {
+  background-color: green;
+  color: white;
+}
+
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  cursor: crosshair;
 }
 
 button.continue {
